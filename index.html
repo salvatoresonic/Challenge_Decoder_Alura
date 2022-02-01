@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Código secreto</h1>
+  <img src="alura.png" alt="alura" id="alura-vector">
+  <main class="main">
+    <section class="form box" >
+      <form action="" id="">
+        <h2 for="input-texto" id=solo-letras>Solo letras minúsculas y sin acentos</h2>
+        
+          
+          <input class="text-input-ingreso" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" contenteditable="true" style="border: hidden;">
+          <input class="btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar">
+          <input class="btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
+       
+        <img src="Vector.png" id="vector">
+      </form>
+    </section>
+
+    <section class="form-box">
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn-copy" type="submit" value="Copiar" id="btn-copy">
+      <span id="message" ></span>
+    </section>
+  </main>
+
+  <script src="encriptar.js"></script>
+  <script src="desencriptar.js"></script>
+  <script src="copy.js"></script>
+</body>
+</html>

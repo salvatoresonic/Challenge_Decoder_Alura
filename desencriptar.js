@@ -15,7 +15,7 @@ botonDesencriptar.addEventListener("click", function (event){
     textoDesencriptado5 = textoDesencriptado4.replace(/ufat/g,"u")
     
     var mensajeResultado = document.querySelector("#msg");
-    mensajeResultado.value = textoDesencriptado5
+    mensajeResultado.innerHTML = textoDesencriptado5
 })
 
 /* Reglas de desencriptación: 

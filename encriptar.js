@@ -8,7 +8,9 @@ botonEncriptar.addEventListener("click", function (event){
     
     event.preventDefault();
     var espacioIngresoDatos = document.querySelector("#input-texto")
+
     var textoAEncriptar = espacioIngresoDatos.value;
+    
     textoEncriptado = textoAEncriptar.replace(/e/g,"enter",)  
     textoEncriptado2 = textoEncriptado.replace(/i/g,"imes")
     textoEncriptado3 = textoEncriptado2.replace(/a/g,"ai")
@@ -16,8 +18,10 @@ botonEncriptar.addEventListener("click", function (event){
     textoEncriptado5 = textoEncriptado4.replace(/u/g,"ufat")
     
     var mensajeResultado = document.querySelector("#msg");
-    mensajeResultado.value = textoEncriptado5
     
+    mensajeResultado.innerHTML = textoEncriptado5
+    
+
 })
 
 

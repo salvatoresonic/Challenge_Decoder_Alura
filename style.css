@@ -7,216 +7,165 @@
 }
 
 
-.main {
-  width: 100vw;
-  margin: auto;
+body{
+  width: 100%;
+  height: auto;
+}
+
+.encripta__main {
+  width: 100%;
+  padding: 1rem 6rem 1rem 6rem;
   display: flex;
-  justify-content: center;
+  
 }
 
 /*titulo*/
 .titulo {
-  position: absolute;
-  left: 35%;
-  right: auto;
-  top: 10px;
-  bottom: auto;
-
+  width: 100%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 55px;
-  
   font-weight: 400;
   line-height: 60px;
-  letter-spacing: 0em;
   text-align: center;
   color: #0A3871;
+  padding: 1rem;
 }
 
-/*boton encriptar*/
-.btn-encriptar {
-  
+/* Caja que va a contener el text input y los botones encriptar y desencriptat */
+
+.encripta__box{
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  padding: 24px;
-
-  position: absolute;
-  width: 328px;
-  height: 67px;
-  left: 200px;
-  bottom: 100px;
-
-  border: 0;
-  color: white;
-  font-size: 15;
-  background-color: #0A3871;
-  border-radius: 24px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 24px;
+  height: 100%;
+  width: 70%;
+  padding: 1rem ;
+  /* background: #EFF1FA;  */
 }
-
-/*boton desencriptar*/
-.btn-desencriptar {
-display: flex;
-flex-direction: column;
-align-items: stretch;
-padding: 24px;
-color: #0A3871;
-
-position: absolute;
-width: 328px;
-height: 67px;
-left: 550px;
-bottom: 100px;
-font-size: 15;
-
-background: #D8DFE8;
-
-border: 1px solid #0A3871;
-box-sizing: border-box;
-border-radius: 24px;
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 24px;  
-}
-
-/*boton copiar*/
-.btn-copy{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding: 24px;
-  color: #0A3871;    
-  
-  position: absolute;
-  width: 328px;
-  height: 67px;
-  left: -12.5px;
-  bottom: 15px;
-  font-size: 15;
-  background: white;
-
-  border: 1px solid #0A3871;
-  box-sizing: border-box;
-  border-radius: 24px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 24px;
-}
-
 
 /*Caja donde se ingresa el texto a encriptar*/
+
 .text-input-ingreso{
-
-  position: absolute;
   width: 680px;
-  height: 48px;
-  
-  left: 220px;
-  right: auto;
-  top: 130px;
-  bottom: auto;
-  
+  height: 480px;  
+  padding: 1rem;
   border-color: transparent; 
-  border-radius: 10px;
+  border-radius: 15px;
   outline: none;
-
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 32px;
-  
   font-weight: 350;
   line-height: 48px;
   letter-spacing: 0em;
   text-align: left;
   color: #0A3871;
-  
 }
 
-/*Caja que (deberia contener) imagen, botonn copiar y texto cuando es digitado*/
-.form-box{
+/* division que contienes al vecto y la leyende "solo letras minus..." */
+
+.encripta__vector__leyenda{
+  padding: .5rem;
+  display: flex;
   
-  background-color: white;
-  position: absolute;
-  height: 600px;
-  width: 350px;
-  left: 1000px;
-  top: 40px;
-  border-radius: 32px;
-  
-
-}
-
-/*espacio donde se muestra el mensaje encriptado*/
-#msg {
-  outline: none;
-  position: relative;
-  height: 200px;
-  width: 100px;
-  left: 0px;
-  top: 40px;
-  border-radius: 20px;
-
-  border-color: transparent;
-  display: block;
-  padding: 0.5em;
-  width: 100%;
-  height: 150px;
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  color: #495057;
-
-  background-color: transparent
-  
-
-}
-
-/*espacio "solo letras minus..."*/
-#solo-letras{
-  position: absolute;
-  top: 530px; 
-  left: 250px;
-  bottom: 90px;
-  right: inherit;
-
-  font-family: 'Inter',sans-serif;
-  font-size: 12px;
-  color: #495057;
-
-}
-
-/*copiado al portapapeles*/
-#message{
-  position: absolute;
-  top: 610px; 
-  left: 20px;
-  bottom: auto;
-  right: inherit;
-  
-  font-family: 'Inter',sans-serif;
-  font-size: 12px;
-  color: #0A3871;
-
-  background-color: transparent;
 }
 
 
 /*imagen "!"*/
 #vector{
-  position: absolute;
-  top: 529px; 
-  left: 230px;
-  bottom: 90px;
-  right: inherit;
+  padding-right: .5rem;
 }
+
+/*espacio "solo letras minus..."*/
+#solo-letras{
+  font-family: 'Inter',sans-serif;
+  font-size: 12px;
+  color: #495057;
+}
+
+/* division que contiene a los botones encriptar y desencriptar */
+
+.encripta__botones{
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+/*boton encriptar*/
+.btn-encriptar {
+  padding: 24px;
+  width: 328px;
+  color: white;
+  background-color: #0A3871;
+  border-radius: 24px;
+  margin-right: 2rem;
+}
+
+/*boton desencriptar*/
+.btn-desencriptar {
+  padding: 24px;
+  color: #0A3871;
+  background: #D8DFE8;
+  width: 328px;
+  font-size: 15;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+}
+
+
+/* caja desencripta que contiene espacio mensaje encriptado y boton copiar */
+.desencripta__box{
+  display: flex;
+  flex-direction: column;
+  background: #EFF1FA;
+  height: 100%;
+  width: 30%;
+  padding: 1rem;
+  
+  /* background: #EFF1FA;  */
+}
+
+/*espacio donde se muestra el mensaje encriptado*/
+#msg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  padding: 1rem;
+  background: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  color: #495057;
+}
+
+/*boton copiar*/
+.btn-copy{ 
+  align-items: stretch;
+  padding: 24px;
+  color: #0A3871;    
+  width: 100%;
+  font-size: 15;
+  background: white;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  margin-top: 1.9rem;
+}
+
+
+/*copiado al portapapeles*/
+#message{
+  font-family: 'Inter',sans-serif;
+  font-size: 12px;
+  color: #0A3871;
+  background-color: transparent;
+  padding-top: .5rem;
+  padding-left: .5rem;
+}
+
+
+
 
 /*imagen logo alura */
 #alura-vector{
@@ -225,4 +174,42 @@ margin: 0px 24px;
   right: auto;
   top: 15px;
   bottom: auto;
+}
+
+@media screen and (max-width: 400px){
+  .encripta__header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .encripta__main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .encripta__box{
+    width: 100%;
+    padding: 1rem;
+    
+  }
+
+  .text-input-ingreso{
+    width: 100%;
+  }
+  
+  #alura-vector{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .desencripta__box{
+    width: 100%;
+    padding: 1rem;
+  }
+
 }
